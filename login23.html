@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      body {
+      background-image: url('https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png'); 
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        backdrop-filter: blur(5px);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(198, 182, 168);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      input[type="text"], input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px;
+        
+        border: 2px solid rgb(67, 64, 64);
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 14px 20px;
+        background-color: orangered;
+        color: rgb(67, 64, 64);
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: rgb(67, 64, 64);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
